@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="../static/img/wugicon.png" type="image/png">
+        <title> Pseudoword Generator</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../static/css/bootstrap.css">
+        <link rel="stylesheet" href="../static/vendors/linericon/style.css">
+        <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../static/vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="../static/vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="../static/vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="../static/vendors/animate-css/animate.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="../static/css/style.css">
+        <link rel="stylesheet" href="../static/css/responsive.css">
+    </head>
+
+<style>
+
+.column1 {
+    float: left;
+    width: 50%;
+    padding-left: 350px;
+    /* padding-right: 100px; */
+}
+.column2 {
+    float: right;
+    width: 50%;
+    padding-left: 50px;
+    padding-right: 200px;
+}
+
+.padding {
+  padding-top: 150px;
+}
+
+.navbar_position {
+  padding-right: 20px;
+  width: 33%
+}
+
+</style>
+    <body>
+
+        <!--================Header Menu Area =================-->
+        <header class="header_area">
+            <div class="main_menu">
+            	<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container box_1620">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<a class="navbar-brand logo_h" href="index.html"><img src="../static/img/wugicon.png" alt=""></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="navbar_position">
+            <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav justify-content-center">
+                <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/getwords"> Generator</a></li>
+                <li class="nav-item"><a class="nav-link" href="/play"> Play</a></li>
+        				<li class="nav-item"><a class="nav-link" href="/resources">Resources</a></li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<!-- <li class="nav-item"><a href="#" class="tickets_btn"> </a></li> -->
+							</ul>
+            </div>
+						</div>
+					</div>
+            	</nav>
+            </div>
+        </header>
+        <!--================Header Menu Area =================-->
+
+        <!--================Home Banner Area =================-->
+  <section class="banner_area">
+      <div class="banner_inner d-flex align-items-center">
+      	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+				<div class="container">
+					<div class="banner_content text-center">
+						<h2> Generate Pseudowords </h2>
+						<div class="page_link">
+						</div>
+					</div>
+				</div>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+
+        <!--================Work Area =================-->
+<section class="made_life_area p_120">
+  <div class="container">
+    <div class="main_title">
+      <h2>Selections</h2>
+    </div>
+      <form action="/result" method="POST">
+      <div class="column1">
+        <br>
+          <h4 align='left'>Choose Language</h4><br>
+            <div class="default-select" id="default-select">
+            <select name='language'>
+              <option value="English"> English </option>
+              <option value="German"> German </option>
+            </select>
+            </div>
+        </div>
+          <div class="column2">
+            <br>
+            <h4> How many pseudowords?</h4> <br>
+            <div class="default-select" id="default-select">
+              <select name='num_words'>
+                <option value="1"> 1 </option>
+                <option value="2"> 2 </option>
+                <option value="3"> 3 </option>
+                <option value="4"> 4 </option>
+                <option value="5"> 5 </option>
+                <option value="6"> 6 </option>
+                <option value="7"> 7 </option>
+                <option value="8"> 8 </option>
+                <option value="9"> 9 </option>
+                <option value="10"> 10 </option>
+              </select>
+          </div>
+        </div> <br> <br>
+      <p class='padding' align='center' > <button class="main_btn" type='submit'> Generate My Pseudowords
+      </button> </p>
+    </form>
+  </div>
+</section>
+
+        <!--================End Work Area =================-->
+
+        <!--================Impress Area =================-->
+        <section class="impress_area p_120">
+        	<div class="container">
+        		<div class="impress_inner">
+					<h2> More languages coming soon</h2>
+					<p> French and Spanish available this Fall. </p>
+					<a class="banner_btn2" href="#">Request Free Demo</a>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Impress Area =================-->
+
+        <!--================Footer Area =================-->
+  <footer class="footer_area p_120">
+    <div class="container">
+      <div class="row footer_inner">
+        <div class="col-lg-7 col-sm-6">
+          <aside class="f_widget ab_widget">
+            <div class="f_title">
+              <h3>About Me</h3>
+            </div>
+            <p> Master's student studying cognitive science of language with a passion for
+              programming and machine learning. </p>
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright Megan Karabin &copy;<script>document.write(new Date().getFullYear());</script>
+            All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true">
+            </i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+          </aside>
+        </div>
+        <div class="col-lg-2">
+          <aside class="f_widget social_widget">
+            <div class="f_title">
+              <h3> Connect </h3>
+            </div>
+            <p></p>
+            <ul class="list">
+              <li><a href="https://www.linkedin.com/in/megan-karabin-08413aa9/"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://megankarabin.github.io/my-blog/"> <img src='https://image.flaticon.com/icons/svg/8/8931.svg' style='width:20px;'>
+              </a></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </footer>
+        <!--================End Footer Area =================-->
+
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="../static/js/jquery-3.2.1.min.js"></script>
+        <script src="../static/js/popper.js"></script>
+        <script src="../static/js/bootstrap.min.js"></script>
+        <script src="../static/js/stellar.js"></script>
+        <script src="../static/vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="../static/vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="../static/vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="../static/vendors/isotope/isotope-min.js"></script>
+        <script src="../static/vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="../static/vendors/jquery-ui/jquery-ui.js"></script>
+        <script src="../static/js/jquery.ajaxchimp.min.js"></script>
+        <script src="../static/js/mail-script.js"></script>
+        <script src="../static/vendors/counter-up/jquery.waypoints.min.js"></script>
+        <script src="../static/vendors/counter-up/jquery.counterup.min.js"></script>
+        <script src="../static/js/theme.js"></script>
+
+    </body>
+</html>
